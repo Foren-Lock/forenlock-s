@@ -3,7 +3,7 @@
 
 ## Project info
 
-**URL**: https://forenlock-prod.netlify.app/
+**URL**: https://foren-lock.github.io/forenlock-s/
 
 ---
 
