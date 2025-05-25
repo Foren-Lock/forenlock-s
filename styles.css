@@ -1,0 +1,296 @@
+/* Fonts */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1e293b; /* navy-800 */
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar link active style */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #1e3a8a; /* navy-900 */
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  position: relative;
+  background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 100%);
+  overflow: hidden;
+}
+
+.hero-logo {
+  height: 7rem;
+  transition: filter 0.3s ease;
+}
+
+.hero-logo:hover {
+  filter: drop-shadow(0 0 12px #3b82f6aa);
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1/1;
+}
+
+.hero-image {
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgb(30 58 138 / 0.4);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hero-image-wrapper:hover .hero-image {
+  transform: scale(1.05);
+}
+
+.glow-bg {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #e0f2fe 0%, #3b82f6 100%);
+  filter: blur(80px);
+  opacity: 0.3;
+  animation: pulse 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+/* Buttons */
+.btn-gradient {
+  background-image: linear-gradient(to right, #1e40af, #1e3a8a);
+  color: white;
+  border: none;
+  transition: background-image 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background-image: linear-gradient(to right, #1e3a8a, #1e40af);
+}
+
+/* Section Titles */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+/* Team Section */
+.team-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Timeline */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #cbd5e1; /* navy-200 */
+  z-index: 1;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.bg-primary {
+  background-color: #1e40af !important; /* navy-900 */
+}
+
+.bg-secondary {
+  background-color: #1e3a8a !important; /* navy-700 */
+}
+
+.bg-tertiary {
+  background-color: #334155 !important; /* navy-500 */
+}
+
+.timeline-box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+  position: relative;
+  z-index: 3;
+}
+
+.timeline-dot {
+  margin-top: 0.75rem;
+}
+
+/* Timeline left side */
+.col-6.text-end .timeline-box::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+}
+
+/* Timeline right side */
+.col-6.ps-4 .timeline-box::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+}
+
+/* Card image */
+.card-img-top.object-cover {
+  object-fit: cover;
+  height: 180px;
+}
+
+/* Card Date Overlay */
+.card-date {
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Contact Icons */
+.icon-circle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Footer */
+.bg-navy-900 {
+  background-color: #1e293b !important; /* navy-900 */
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  font-size: 1.25rem;
+  width: 36px;
+  height: 36px;
+  line-height: 24px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Form validation styles (Bootstrap 5 native support is used) */
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .hero-logo {
+    height: 5rem;
+  }
+}
+
+
+/* Miletones */
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #cbd5e1; /* navy-200 */
+  z-index: 1;
+}
+
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.bg-primary {
+  background-color: #1e40af !important; /* navy-900 */
+}
+
+.bg-secondary {
+  background-color: #1e3a8a !important; /* navy-700 */
+}
+
+.bg-tertiary {
+  background-color: #334155 !important; /* navy-500 */
+}
+
+.timeline-box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+  position: relative;
+  z-index: 3;
+}
+
+.col-6.text-end .timeline-box::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white;
+}
+
+.col-6.ps-4 .timeline-box::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+}
